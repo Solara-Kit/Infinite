@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct InfiniteApp: App {
-    
+
     @State private var isActive = true
-    
+
     var body: some Scene {
         WindowGroup {
             if BrandConfig.shared.showSplashScreen {
@@ -21,7 +21,7 @@ struct InfiniteApp: App {
             }
         }
     }
-    
+
     @ViewBuilder
     var splash: some View {
         if isActive {
