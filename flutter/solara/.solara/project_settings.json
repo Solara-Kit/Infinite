@@ -1,0 +1,11 @@
+{
+  "android": {
+    "build.gradle": "android/build.gradle",
+    "app/build.gradle": "android/app/build.gradle"
+  },
+  "ios": {
+    "xcodeproj": "ios/Runner.xcodeproj",
+    "Assets.xcassets": "ios/Runner/Assets.xcassets",
+    "Info.plist": "ios/Runner/Info.plist"
+  }
+}

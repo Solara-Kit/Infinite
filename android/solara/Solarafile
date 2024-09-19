@@ -1,0 +1,12 @@
+# This is your Solarafile
+# Define your lanes here
+
+def test_lane
+  puts "Running tests..."
+  # Add your test commands here
+end
+
+def deploy_lane
+  puts "Deploying..."
+  # Add your deployment commands here
+end

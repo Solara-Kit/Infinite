@@ -1,0 +1,12 @@
+{
+  "brands": [
+    {
+      "key": "brand2",
+      "name": "Brand 2"
+    },
+    {
+      "key": "brand1",
+      "name": "Brand 1"
+    }
+  ]
+}

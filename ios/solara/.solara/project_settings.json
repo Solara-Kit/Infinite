@@ -1,0 +1,7 @@
+{
+  "ios": {
+    "xcodeproj": "Infinite.xcodeproj",
+    "Assets.xcassets": "Infinite/Assets.xcassets",
+    "Info.plist": "Info.plist"
+  }
+}

@@ -1,0 +1,101 @@
+Dir[File.expand_path('../.solara/core/platform/shared/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/core/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/core/doctor/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/core/commands/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/dashboard/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/dashboard/*.rb')].each do |file| require_relative file end
+Dir[File.expand_path('../.solara/apps/*.rb')].each do |file| require_relative file end
+require 'json'
+require 'xcodeproj'
+
+default_platform(:android)
+
+before_all do |lane, options|
+  @app_key = options[:app_key]
+end
+
+platform :android do
+end
+
+platform :ios do
+end
+
+desc "Init Solara"
+lane :init_solara do
+    init()
+end
+
+def init()
+    solara_path = File.join(FilePath.root, 'solara', 'apps')
+
+    # Check if Solara path exists
+    if Dir.exist?(solara_path)
+        puts "Solara already initialized. Be aware that reinitializing will delete solara folder and add an initial app. Do you want to proceed? (y/n)"
+        confirmation = STDIN.gets.chomp.downcase
+
+        unless confirmation == 'y'
+          puts "Solara initialization cancelled."
+          return
+        end
+    end
+
+    template_path = FilePath.solara_template_apps
+    copier = FolderCopier.new(template_path, solara_path)
+    copier.copy
+
+    @app_key = AppsManager.instance.first_app_key
+    switch_to_app
+end
+
+desc "Configure Solara"
+    lane :configure do
+    SolaraConfigurator.new.start
+end
+
+desc "Onboard a new app. It will create a starter app in apps and open the dashboard."
+lane :onboard do |options|
+    app_key = options[:app_key]
+    app_name = options[:app_name]
+    raise "You must provide a non-empty app key using `app_key:{KEY}`." if app_key.nil?
+    raise "You must provide a non-empty app name using `app_name:{NAME}`." if app_name.nil?
+    AppOnboarder.new(app_key, app_name).onboard
+    validate_app_key
+    switch_to_app
+    app_dashboard
+end
+
+desc "Switch to an app"
+lane :switch_to_app do
+    validate_app_key
+    AppSwitcher.new(@app_key).start()
+end
+
+desc "Open the dashboard for an app"
+lane :app_dashboard do
+    validate_app_key
+    open_dashboard("app/app.html?app_key=#{@app_key}")
+end
+
+desc "Open the dashboard for an app"
+lane :all_apps_dashboard do
+    open_dashboard("apps/apps.html")
+end
+
+def open_dashboard(page)
+    DashboardServer.new(page, 8000, FilePath.dashboard).start
+end
+
+desc "Visit Doctor for an app"
+lane :visit_doctor do
+    validate_app_key
+    DoctorManager.new.visit([@app_key])
+end
+
+def validate_app_key
+    raise "You must provide a non-empty app key using `app_key:NAME`. The app key must match the app folder name in #{FilePath.solara_apps}." if @app_key.nil?
+    apps_list_path = FilePath.solara_apps_list()
+    apps_list = JSON.parse(File.read(apps_list_path))
+
+    @app = apps_list["apps"].find { |app| app["key"] == @app_key }
+    raise "App with key '#{@app_key}' not found in #{FilePath.solara_apps_list}." if @app.nil?
+end

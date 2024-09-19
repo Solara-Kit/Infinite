@@ -1,0 +1,37 @@
+name: infinite
+description: Infinite is an infinitely scalable platform for creating an unlimited number of custom branded mobile apps.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: "^1.0.6"
+  package_info_plus: "^8.0.2"
+  build_web_compilers: "^4.0.4"
+  build_runner: "^2.4.0"
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: "^3.0.0"
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/solara_artifacts/
+  fonts:
+  - family: Inter
+    fonts:
+    - asset: assets/solara_fonts/Inter-Black.ttf
+    - asset: assets/solara_fonts/Inter-Bold.ttf
+    - asset: assets/solara_fonts/Inter-ExtraBold.ttf
+    - asset: assets/solara_fonts/Inter-ExtraLight.ttf
+    - asset: assets/solara_fonts/Inter-Light.ttf
+    - asset: assets/solara_fonts/Inter-Medium.ttf
+    - asset: assets/solara_fonts/Inter-Regular.ttf
+    - asset: assets/solara_fonts/Inter-SemiBold.ttf
+    - asset: assets/solara_fonts/Inter-Thin.ttf
+  - family: Cairo
+    fonts:
+    - asset: assets/solara_fonts/Cairo-Black.ttf
+    - asset: assets/solara_fonts/Cairo-Bold.ttf
