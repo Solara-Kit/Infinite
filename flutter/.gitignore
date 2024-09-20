@@ -14,3 +14,5 @@ ios/Runner/InfoPlist.xcstrings
 solara_fonts
 solara/brand/brands/current_brand.json
 !solara/brand/brands/**/InfoPlist.xcstrings
+.solara/aliases/
+.solara/solara_settings.json

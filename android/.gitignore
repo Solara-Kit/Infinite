@@ -21,3 +21,5 @@ solara/.solara/solara_settings.json
 **/SolaraArtifacts/
 solara_fonts
 solara/brand/brands/current_brand.json
+.solara/aliases/
+.solara/solara_settings.json
