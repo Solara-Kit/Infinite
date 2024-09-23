@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "183918972C73514E00394A7B"
-               BuildableName = "Brand 2.app"
+               BuildableName = "Brand 1.app"
                BlueprintName = "Infinite"
                ReferencedContainer = "container:Infinite.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "183918972C73514E00394A7B"
-            BuildableName = "Brand 2.app"
+            BuildableName = "Brand 1.app"
             BlueprintName = "Infinite"
             ReferencedContainer = "container:Infinite.xcodeproj">
          </BuildableReference>
