@@ -169,6 +169,7 @@
 				4679627317C26B94B550D7EA /* Brand.xcconfig */,
 				DEE251A83ED9C9FE673F1FD4 /* BrandTheme.swift */,
 				733816500CFD225F1478A0D0 /* Fonts */,
+				D39456413362D86C74E3E006 /* Assets */,
 			);
 			name = SolaraArtifacts;
 			sourceTree = "<group>";
@@ -187,6 +188,13 @@
 				E919E2C84FC9EDDC54C7BB8F /* Inter-SemiBold.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		D39456413362D86C74E3E006 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
