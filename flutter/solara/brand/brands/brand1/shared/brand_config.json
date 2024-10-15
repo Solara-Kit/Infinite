@@ -1,5 +1,5 @@
 {
   "brandName": "Brand 1",
-  "showSplashScreen": true,
+  "showSplashScreen": false,
   "baseUrl": "https://www.google.com"
 }

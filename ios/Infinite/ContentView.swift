@@ -12,8 +12,8 @@ struct ContentView: View {
         NavigationView {
             MyHomePage(title: "Infinite")
         }
-        .accentColor(Color(BrandTheme.Colors.primary))
-        .background(Color(BrandTheme.Colors.background))
+        .accentColor(Color(BrandThemeColors.shared.primary))
+        .background(Color(BrandThemeColors.shared.background))
     }
 }
 
@@ -23,7 +23,7 @@ struct MyHomePage: View {
 
     var body: some View {
         ZStack {
-            Color(BrandTheme.Colors.background).ignoresSafeArea()
+            Color(BrandThemeColors.shared.background).ignoresSafeArea()
 
             VStack(spacing: 16) {
                 HeaderView()
@@ -32,10 +32,10 @@ struct MyHomePage: View {
 
                 VStack {
                     Text("You have pushed the button this many times:")
-                        .foregroundColor(Color(BrandTheme.Colors.onBackground))
+                        .foregroundColor(Color(BrandThemeColors.shared.onBackground))
                     Text("\(counter)")
                         .font(.headline)
-                        .foregroundColor(Color(BrandTheme.Colors.onBackground))
+                        .foregroundColor(Color(BrandThemeColors.shared.onBackground))
                 }
 
                 Spacer()
@@ -48,10 +48,10 @@ struct MyHomePage: View {
             ToolbarItem(placement: .principal) {
                 Text(title)
                     .font(.headline)
-                    .foregroundColor(Color(BrandTheme.Colors.onPrimary))
+                    .foregroundColor(Color(BrandThemeColors.shared.onPrimary))
             }
         }
-        .navigationBarColor(backgroundColor: Color(BrandTheme.Colors.primary), textColor: Color(BrandTheme.Colors.onPrimary))
+        .navigationBarColor(backgroundColor: Color(BrandThemeColors.shared.primary), textColor: Color(BrandThemeColors.shared.onPrimary))
     }
 }
 
@@ -85,10 +85,10 @@ struct InfoText: View {
     var body: some View {
         HStack(alignment: .top) {
             Text(title)
-                .foregroundColor(Color(BrandTheme.Colors.primary))
+                .foregroundColor(Color(BrandThemeColors.shared.primary))
                 .font(.system(size: 18, weight: .bold))
             Text(value)
-                .foregroundColor(Color(BrandTheme.Colors.secondary))
+                .foregroundColor(Color(BrandThemeColors.shared.secondary))
                 .font(.system(size: 16))
         }
     }
@@ -102,9 +102,9 @@ struct FooterView: View {
             Spacer()
             Button(action: onIncrementClick) {
                 Image(systemName: "plus")
-                    .foregroundColor(Color(BrandTheme.Colors.onPrimary))
+                    .foregroundColor(Color(BrandThemeColors.shared.onPrimary))
                     .padding()
-                    .background(Color(BrandTheme.Colors.primary))
+                    .background(Color(BrandThemeColors.shared.primary))
                     .clipShape(Circle())
             }
         }

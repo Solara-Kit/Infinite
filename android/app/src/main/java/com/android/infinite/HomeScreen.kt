@@ -26,7 +26,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -44,9 +43,6 @@ fun HomeScreen(navController: NavController, title: String) {
         topBar = {
             TopAppBar(
                 title = { Text(text = title) },
-                colors = TopAppBarDefaults.smallTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.secondary
-                )
             )
         },
         content = { paddingValues ->
@@ -114,14 +110,12 @@ fun InfoText(title: String, value: String) {
     ) {
         Text(
             text = title,
-            color = Color(BrandTheme.Colors.primary),
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp
         )
         Spacer(modifier = Modifier.width(8.dp))
         Text(
             text = value,
-            color = Color(BrandTheme.Colors.secondary),
             fontSize = 16.sp,
             modifier = Modifier.weight(1f)
         )
