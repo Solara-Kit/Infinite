@@ -16,3 +16,5 @@ solara/brand/brands/current_brand.json
 !solara/brand/brands/**/InfoPlist.xcstrings
 .solara/aliases/
 .solara/solara_settings.json
+android/app/google-services.json
+android/app/dummy/dummy.txt

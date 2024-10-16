@@ -1,0 +1,15 @@
+{
+  "description": "This file outlines the resources to be transferred from the brand source to the codebase during the switching process.",
+  "files": [
+    {
+      "source": "{brand_key}/android/google-services.json",
+      "destination": "/android/app",
+      "mandatory": true
+    },
+    {
+      "source": "{}/android/dummy",
+      "destination": "/android/app/dummy",
+      "mandatory": false
+    }
+  ]
+}
