@@ -177,6 +177,13 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		995008C2045DE720AFC70E90 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		9ADB30F70F3E41296F700758 /* SolaraArtifacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +191,7 @@
 				C542B0435FB6F82C1B3FD7A1 /* Brand.xcconfig */,
 				BE1BCDB81C2BBFFD8BDDB8C0 /* BrandTheme.swift */,
 				A29F7567DF29FD298D250399 /* Fonts */,
+				995008C2045DE720AFC70E90 /* Assets */,
 			);
 			name = SolaraArtifacts;
 			sourceTree = "<group>";
