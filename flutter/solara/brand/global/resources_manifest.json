@@ -4,7 +4,7 @@
     {
       "source": "{brand_key}/android/google-services.json",
       "destination": "/android/app",
-      "mandatory": true
+      "mandatory": false
     },
     {
       "source": "{}/android/dummy",
