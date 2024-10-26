@@ -20,20 +20,18 @@ Each directory contains a `json_manifest.json` file with the following structure
     "files": [
         {
             "fileName": "",
-            "generate": {
-                "enabled": true,
-                "fileName": "",
-                "className": "",
-                "customClassNames": [
-                    {
-                        "generatedName": "",
-                        "customName": ""
-                    }
-                ]
-            }
+            "generate": true,
+            "parentClassName": "",
+            "customClassNames": [
+                {
+                    "originalName": "",
+                    "customName": ""
+                }
+            ]
         }
     ]
 }
+```
 ```
 
 ### Property Descriptions

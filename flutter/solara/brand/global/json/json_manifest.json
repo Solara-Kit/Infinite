@@ -1,17 +1,15 @@
 {
     "files": [
         {
-            "fileName": "sample_content.json",
-            "generate": {
-                "enabled": true,
-                "className": "SampleContent",
-                "customClassNames": [
-                    {
-                        "generatedName": "SampleContent",
-                        "customName": "MySampleContent"
-                    }
-                ]
-            }
+            "fileName": "global_sample_content.json",
+            "generate": true,
+            "parentClassName": "GlobalSampleContent",
+            "customClassNames": [
+                {
+                    "originalName": "SampleContent",
+                    "customName": "GlobalSampleContent"
+                }
+            ]
         }
     ]
 }
