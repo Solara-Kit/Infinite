@@ -1,0 +1,16 @@
+{
+    "description": "The JSON Manifest is intended to specify the files you need to customize its generated code",
+    "files": [
+        {
+            "fileName": "",
+            "generate": true,
+            "parentClassName": "",
+            "customClassNames": [
+                {
+                    "originalName": "",
+                    "customName": ""
+                }
+            ]
+        }
+    ]
+}
