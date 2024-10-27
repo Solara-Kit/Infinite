@@ -10,11 +10,11 @@ solara/.solara/solara_config.json
 solara/.solara/solara_settings.json
 **/solara_artifacts/
 **/SolaraArtifacts/
-ios/Runner/InfoPlist.xcstrings
 solara_fonts
 solara/brand/brands/current_brand.json
 !solara/brand/brands/**/InfoPlist.xcstrings
 .solara/aliases/
 .solara/solara_settings.json
-android/app/google-services.json
-android/app/dummy/dummy.txt
+/android/app/google-services.json
+/android/app/dummy/dummy.txt
+/ios/Runner/InfoPlist.xcstrings
