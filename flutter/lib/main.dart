@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget _brandInfoView() {
-    const brandConfig = BrandConfig.instance;
+    var brandConfig = BrandConfig.instance;
 
     return Padding(
       padding: const EdgeInsets.all(8.0),

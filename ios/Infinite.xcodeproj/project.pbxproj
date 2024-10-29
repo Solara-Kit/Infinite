@@ -17,7 +17,6 @@
 		189A18DD2C99949500F5AA2F /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A18DC2C99949500F5AA2F /* SplashScreen.swift */; };
 		1A1098FF0BDE92A0295C21D2 /* BrandConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E82D6DEC6DB4E90199C075 /* BrandConfig.swift */; };
 		7C2005E6FE5C5BD90FAAB349 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 81FC9F8AE8D2F5ABFC02E181 /* InfoPlist.xcstrings */; };
-		9379C04326AB455828F4DCF1 /* sample_content.swift in Sources */ = {isa = PBXBuildFile; fileRef = E744B3A0975D9EEBF0EF1C53 /* sample_content.swift */; };
 		BEDA40A710EFB36E85912A4E /* BrandTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE251A83ED9C9FE673F1FD4 /* BrandTheme.swift */; };
 		F9A3FD5C96D3DBA799B191EA /* SampleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85194E99897C02D53B8B5C4D /* SampleContent.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		07BA3283E947E20CEAAD47B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		183918982C73514E00394A7B /* Infinite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183918982C73514E00394A7B /* Brand 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brand 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1839189B2C73514E00394A7B /* InfiniteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteApp.swift; sourceTree = "<group>"; };
 		1839189D2C73514E00394A7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1839189F2C73515100394A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,14 +59,13 @@
 		56E82D6DEC6DB4E90199C075 /* BrandConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrandConfig.swift; path = SolaraArtifacts/BrandConfig.swift; sourceTree = "<group>"; };
 		596044B1BA2210ACE9D040F1 /* Inter-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Light.ttf"; path = "SolaraArtifacts/Fonts/Inter-Light.ttf"; sourceTree = "<group>"; };
 		7C1E91620CBA7DA450F9B401 /* Inter-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Medium.ttf"; path = "SolaraArtifacts/Fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
-		81FC9F8AE8D2F5ABFC02E181 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		81FC9F8AE8D2F5ABFC02E181 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		85194E99897C02D53B8B5C4D /* SampleContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SampleContent.swift; path = SolaraArtifacts/SampleContent.swift; sourceTree = "<group>"; };
 		AE10A3D9BB87BB1F9B69BA45 /* Inter-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Regular.ttf"; path = "SolaraArtifacts/Fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 		CF05AFCB7EBDD9896265E1F7 /* Inter-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "SolaraArtifacts/Fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
 		D82169C299BA3E83155DFD50 /* Inter-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Thin.ttf"; path = "SolaraArtifacts/Fonts/Inter-Thin.ttf"; sourceTree = "<group>"; };
 		D8D6C4D30098DC23895DD182 /* Inter-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-Black.ttf"; path = "SolaraArtifacts/Fonts/Inter-Black.ttf"; sourceTree = "<group>"; };
 		DEE251A83ED9C9FE673F1FD4 /* BrandTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrandTheme.swift; path = SolaraArtifacts/BrandTheme.swift; sourceTree = "<group>"; };
-		E744B3A0975D9EEBF0EF1C53 /* sample_content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = sample_content.swift; path = SolaraArtifacts/sample_content.swift; sourceTree = "<group>"; };
 		E919E2C84FC9EDDC54C7BB8F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Inter-SemiBold.ttf"; path = "SolaraArtifacts/Fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,7 @@
 		183918992C73514E00394A7B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				183918982C73514E00394A7B /* Infinite.app */,
+				183918982C73514E00394A7B /* Brand 1.app */,
 				183918A82C73515100394A7B /* InfiniteTests.xctest */,
 				183918B22C73515100394A7B /* InfiniteUITests.xctest */,
 			);
@@ -174,7 +172,6 @@
 				DEE251A83ED9C9FE673F1FD4 /* BrandTheme.swift */,
 				733816500CFD225F1478A0D0 /* Fonts */,
 				D39456413362D86C74E3E006 /* Assets */,
-				E744B3A0975D9EEBF0EF1C53 /* sample_content.swift */,
 				85194E99897C02D53B8B5C4D /* SampleContent.swift */,
 			);
 			name = SolaraArtifacts;
@@ -220,7 +217,7 @@
 			);
 			name = Infinite;
 			productName = Infinite;
-			productReference = 183918982C73514E00394A7B /* Infinite.app */;
+			productReference = 183918982C73514E00394A7B /* Brand 1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		183918A72C73515100394A7B /* InfiniteTests */ = {
@@ -339,7 +336,6 @@
 				1839189C2C73514E00394A7B /* InfiniteApp.swift in Sources */,
 				1A1098FF0BDE92A0295C21D2 /* BrandConfig.swift in Sources */,
 				BEDA40A710EFB36E85912A4E /* BrandTheme.swift in Sources */,
-				9379C04326AB455828F4DCF1 /* sample_content.swift in Sources */,
 				F9A3FD5C96D3DBA799B191EA /* SampleContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,3 +17,4 @@ solara/brand/brands/current_brand.json
 !solara/brand/brands/**/InfoPlist.xcstrings
 .solara/aliases/
 .solara/solara_settings.json
+/InfoPlist.xcstrings
